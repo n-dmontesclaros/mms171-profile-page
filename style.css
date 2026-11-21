@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #030322;
+}
+
+h1, h2, h3 {
+    font-family: 'Nunito', sans-serif !important;
+}
+
+/* SECTION 1: BANNER */
+.section-1 {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0;
+    line-height: 0;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* SECTION 2: ABOUT ME */
+.section-2 {
+    background-color: #eb3705;
+    padding: 3.75rem 1.25rem 3.75rem 1.25rem;
+    text-align: center;
+}
+
+.section-2 h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+.bio-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-2 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.41rem;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/* SECTION 3: THINGS I LOVE */
+.section-3 {
+    background: linear-gradient(180deg, #eb3705 0%, #ff9578 50%, #ffffff 100%);
+    padding: 0 1.25rem 5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    width: 675px;
+    max-width: 100%;
+    min-height: 228px;
+    background-color: #ffffff !important;
+    border-radius: 6.25rem;
+    padding: 2.18rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.card-container h2 {
+    font-size: 2.2rem;
+    color: #eb3705;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.93rem;
+}
+
+.card-container ul {
+    list-style-type: disc;
+    text-align: left;
+    display: inline-block;
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.card-container li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.41rem;
+    color: #030322;
+    font-weight: 400;
+    margin-bottom: 0.37rem;
+}
+
+/* SECTION 4: PASSION PROJECTS */
+.section-4 {
+    background-color: #ffffff;
+    padding: 2.5rem 0;
+}
+
+.section-4 > h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #eb3705;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 3.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 2.5rem 3.75rem;
+}
+
+.project-container:nth-of-type(1) .project-info {
+    max-width: 45%;
+}
+
+.project-logo {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1.25rem auto;
+}
+
+.project-container:nth-of-type(1) h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #eb3705;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.project-container:nth-of-type(1) p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.16rem;
+    font-weight: 400;
+    color: #030322;
+    line-height: 1.6;
+}
+
+.project-container:nth-of-type(1) .project-media {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-poster {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    border-radius: 2.5rem 0 0 2.5rem;
+    object-fit: cover;
+}
+
+/* LUBLOB SECTION ALIGNMENT FIX */
+.project-container.lublob-section {
+    background: linear-gradient(90deg, #090d16 0%, #172434 50%, #2b405f 100%);
+    border-radius: 1.5rem;
+    margin: 2rem 3.75rem;
+    align-items: center;
+}
+
+.project-container.lublob-section .project-media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.project-container.lublob-section .project-media img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+.lublob-info-column {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.lublob-card {
+    background-color: #ffffff;
+    border-radius: 1.25rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.lublob-card h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #eb3705;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 0.75rem;
+}
+
+.lublob-card p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.08rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.written-works-wrapper {
+    width: 100%;
+}
+
+.written-works-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+}
+
+/* STUDIO BIOMIMIC */
+.project-container:nth-of-type(3) {
+    background-color: #ffffff;
+    align-items: flex-start;
+}
+
+.project-container:nth-of-type(3) .project-info {
+    flex: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.project-container:nth-of-type(3) h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e11c01;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.project-container:nth-of-type(3) p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.08rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.nudibranch-img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.project-container:nth-of-type(3) .project-media {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.term-plan-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+}
+
+/* SECTION 5: CONTACT */
+.section-5 {
+    background-color: #ffffff;
+    padding: 2.5rem 3.75rem;
+    border-top: 1px solid #eeeeee;
+}
+
+.section-5 h2 {
+    font-size: 1.41rem;
+    font-weight: 700;
+    color: #030322;
+    text-transform: uppercase;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0.93rem;
+}
+
+.section-5 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.41rem;
+    font-weight: 400;
+    color: #030322;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section-5 a {
+    color: #030322;
+    text-decoration: underline;
+}
+
+.section-5 a:hover {
+    color: #eb3705;
+}
+
+@media (max-width: 600px) {
+    .section-4 > h2 {
+        padding-left: 1.5rem;
+    }
+
+    .project-container {
+        flex-direction: column;
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .project-container:nth-of-type(1) .project-info,
+    .project-container:nth-of-type(1) .project-media,
+    .project-container.lublob-section .project-info,
+    .project-container.lublob-section .project-media,
+    .project-container:nth-of-type(3) .project-info,
+    .project-container:nth-of-type(3) .project-media {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project-container.lublob-section {
+        margin: 1rem;
+    }
+
+    .project-poster {
+        border-radius: 1.5rem;
+    }
+
+    .section-5 {
+        padding: 1.5rem;
+    }
+}
